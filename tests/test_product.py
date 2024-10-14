@@ -1,5 +1,7 @@
 import pytest
+
 from tests.confitest import product1
+
 
 def test_product1(product1):
     assert product1.name == "Samsung Galaxy S23 Ultra"
