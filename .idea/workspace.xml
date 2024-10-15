@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="Создание функции чтения JSON-файла и создания объекта классов.">
-      <change beforePath="$PROJECT_DIR$/.idea/Homework_14_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Homework_14_1.iml" afterDir="false" />
+    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="Доработка визуала">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/confitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/confitest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.category.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.product.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#1 on homework__14__1",
-    "last_opened_file_path": "C:/Users/05bat/PycharmProjects/coursework",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.category.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.product.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on homework__14__1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/05bat/PycharmProjects/coursework&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\05bat\PycharmProjects\Homework_14_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.utils">
+  <component name="RunManager" selected="Python.category">
     <configuration name="category" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Homework_14_1" />
       <option name="ENV_FILES" value="" />
@@ -166,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.category" />
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.product" />
       </list>
@@ -200,11 +194,20 @@
       <option name="project" value="LOCAL" />
       <updated>1728926589827</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Доработка визуала">
+      <option name="closed" value="true" />
+      <created>1728934565836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728934565836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создание классов Category и Products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создание классов Category и Products" />
+    <MESSAGE value="Доработка визуала" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработка визуала" />
   </component>
 </project>
