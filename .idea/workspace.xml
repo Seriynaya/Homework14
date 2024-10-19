@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="Добавление html отчета">
+    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="Добавление новых функций и тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/confitest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/confitest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +60,7 @@
     "Python.product.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "homework__14__2",
+    "git-widget-placeholder": "#2 on homework__14__2",
     "last_opened_file_path": "C:/Users/05bat/PycharmProjects/coursework",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -226,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729097259604</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавление новых функций и тестов">
+      <option name="closed" value="true" />
+      <created>1729330244720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729330244720</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +237,7 @@
     <MESSAGE value="Доработка визуала" />
     <MESSAGE value="Доработка тестов" />
     <MESSAGE value="Добавление html отчета" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление html отчета" />
+    <MESSAGE value="Добавление новых функций и тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление новых функций и тестов" />
   </component>
 </project>

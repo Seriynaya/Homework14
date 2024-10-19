@@ -18,11 +18,11 @@ class Category:
         Category.product_count += 1
 
     @property
-    def products(self):
+    def products_list(self):
         return self.__products
 
     @property
-    def products_list(self):
+    def products(self):
         str_product = ""
         for product in self.__products:
             str_product += (
