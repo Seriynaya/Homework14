@@ -13,6 +13,12 @@ class Category:
         Category.product_count += len(self.__products)
         Category.category_count += 1
 
+    def __str__(self):
+        quantity = 0
+        for i in self.__products:
+            quantity += i.quantity
+        return f'{self.name}, количество продуктов: {quantity} шт.'
+
     def add_product(self, product: Product):
         self.__products.append(product)
         Category.product_count += 1

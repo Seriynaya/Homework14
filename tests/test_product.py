@@ -1,6 +1,6 @@
 import pytest
 
-from tests.confitest import product1
+from tests.confitest import product1, product2, product3, product4
 from src.product import Product
 
 new_product = Product.new_product(
@@ -31,3 +31,14 @@ def test_new_product():
     assert new_product.price == 180000
     new_product.price = 12000
     assert new_product.price == 12000
+
+def test_product_str(product1, product2, product3, product4):
+    assert str(product1) == "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт."
+    assert str(product2) == "Iphone 15, 210000.0 руб. Остаток: 8 шт."
+    assert str(product3) == "Xiaomi Redmi Note 11, 31000.0 руб. Остаток: 14 шт."
+    assert str(product4) == "55 QLED 4K, 123000.0 руб. Остаток: 7 шт."
+
+def test_add_product(product2, product3):
+    assert product2 + product3 == 2114000
+    with pytest.raises(TypeError):
+        product2 + 1
