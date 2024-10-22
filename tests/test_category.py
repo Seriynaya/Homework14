@@ -16,13 +16,15 @@ new_product = Product.new_product(
 def test_category1(category1, product4):
     assert category1.name == "Телевизоры"
     assert category1.description == "Современный телевизор, который позволяет наслаждаться просмотром, станет вашим другом и помощником"
-    assert category1.products == [product4]
+    assert category1.products == f"{product4.name}, {product4.price} руб. Остаток: {product4.quantity} шт.\n"
 
 
 def test_category2(category2, product1, product2, product3):
     assert category2.name == "Смартфоны"
     assert category2.description == "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни"
-    assert category2.products == [product1, product2, product3]
+    assert category2.products == (f"{product1.name}, {product1.price} руб. Остаток: {product1.quantity} шт.\n"
+                                  f"{product2.name}, {product2.price} руб. Остаток: {product2.quantity} шт.\n"
+                                  f"{product3.name}, {product3.price} руб. Остаток: {product3.quantity} шт.\n")
 
 
 def test_add_product(category2, product4):
