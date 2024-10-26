@@ -1,4 +1,5 @@
 class Product:
+    """Класс предоставляющий информацию о конкретном продукте"""
     name: str
     description: str
     price: int
@@ -6,6 +7,7 @@ class Product:
 
 
     def __init__(self, name, description, price, quantity):
+        """Инициализация объекта"""
         self.name = name
         self.description = description
         self.__price = price
@@ -13,10 +15,12 @@ class Product:
 
 
     def __str__(self):
+        """Отображение строки в заданном формате"""
         return f"{self.name}, {self.__price} руб. Остаток: {self.quantity} шт."
 
 
     def __add__(self, other):
+        """Метод сложения двух продуктов"""
         if type(self) == type(other):
             return self.__price * self.quantity + other.__price * other.quantity
         else:
@@ -25,6 +29,7 @@ class Product:
 
     @classmethod
     def new_product(cls, product_info: dict):
+        """Добавление нового продукта в список"""
         name = product_info.get("name")
         description = product_info.get("description")
         price = product_info.get("price")
@@ -39,6 +44,7 @@ class Product:
 
     @price.setter
     def price(self, price_cost: int):
+        """Функция изменения цены"""
         if price_cost <= 0:
             print("Цена не должна быть нулевая или отрицательная")
         else:

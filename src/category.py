@@ -2,6 +2,7 @@ from src.product import Product
 
 
 class Category:
+    """Класс предоставляющий информацию о категории товара и его общих характеристиках"""
     name = str
     description = str
     products = list
@@ -10,6 +11,7 @@ class Category:
 
 
     def __init__(self, name, description, products=list):
+        """Инициализация объекта"""
         self.name = name
         self.description = description
         self.__products = products if products else []
@@ -18,6 +20,7 @@ class Category:
 
 
     def __str__(self):
+        """Отображение строки в заданном формате"""
         quantity = 0
         for i in self.__products:
             quantity += i.quantity
@@ -25,6 +28,7 @@ class Category:
 
 
     def add_product(self, product):
+        """Функция добавления нового продукта в список"""
         if isinstance(product, Product):
             self.__products.append(product)
             Category.product_count += 1
@@ -39,6 +43,7 @@ class Category:
 
     @property
     def products_str_view(self):
+        """Отображение продукта в заданном формате"""
         str_product = ""
         for product in self.__products:
             str_product += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
