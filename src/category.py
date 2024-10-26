@@ -8,6 +8,7 @@ class Category:
     category_count = 0
     product_count = 0
 
+
     def __init__(self, name, description, products=list):
         self.name = name
         self.description = description
@@ -15,11 +16,13 @@ class Category:
         Category.product_count += len(self.__products)
         Category.category_count += 1
 
+
     def __str__(self):
         quantity = 0
         for i in self.__products:
             quantity += i.quantity
         return f"{self.name}, количество продуктов: {quantity} шт."
+
 
     def add_product(self, product):
         if isinstance(product, Product):
@@ -28,12 +31,14 @@ class Category:
         else:
             raise TypeError
 
+
     @property
     def products_list(self):
         return self.__products
 
+
     @property
-    def products(self):
+    def products_str_view(self):
         str_product = ""
         for product in self.__products:
             str_product += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"

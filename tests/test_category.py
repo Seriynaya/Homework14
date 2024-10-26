@@ -2,9 +2,21 @@ import pytest
 
 from src.category import Category
 from src.product import Product
-from tests.confitest import (category1, category2, category3, category4,
-                             grass1, grass2, product1, product2, product3,
-                             product4, smartphone1, smartphone2, smartphone3)
+from tests.confitest import (
+    category1,
+    category2,
+    category3,
+    category4,
+    grass1,
+    grass2,
+    product1,
+    product2,
+    product3,
+    product4,
+    smartphone1,
+    smartphone2,
+    smartphone3,
+)
 
 new_product = Product.new_product(
     {

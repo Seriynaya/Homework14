@@ -11,6 +11,7 @@ class Smartphone(Product):
         self.memory = memory
         self.color = color
 
+
     def __add__(self, other):
         if type(self) == type(other):
             return (self.price * self.quantity) + (other.price * other.quantity)
