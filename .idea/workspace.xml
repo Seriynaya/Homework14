@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="Добавление магических методов">
+    <list default="true" id="e35ea2b9-8cac-4ef9-bdef-a8ad6bd5a202" name="Changes" comment="доработка функций">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,25 +50,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_category.test_add_product.executor": "Run",
-    "Python tests.Python tests for test_category.test_category1.executor": "Run",
-    "Python tests.Python tests for test_category.test_category2.executor": "Run",
-    "Python tests.Python tests for test_category.test_category_init.executor": "Run",
-    "Python tests.Python tests for test_category.test_category_str.executor": "Run",
-    "Python tests.Python tests for test_product.test_add_product.executor": "Run",
-    "Python tests.Python tests for test_product.test_product_str.executor": "Run",
-    "Python.category.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.product.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "homework__14__3",
-    "last_opened_file_path": "C:/Users/05bat/PycharmProjects/coursework",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_category.test_add_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.test_category1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.test_category2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.test_category_init.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_category.test_category_str.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.test_add_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.test_product_str.executor&quot;: &quot;Run&quot;,
+    &quot;Python.category.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.product.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework__14__3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/05bat/PycharmProjects/coursework&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\05bat\PycharmProjects\Homework_14_1" />
@@ -237,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729598754425</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="доработка функций">
+      <option name="closed" value="true" />
+      <created>1729605993281</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729605993281</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +254,7 @@
     <MESSAGE value="Добавление новых функций и тестов" />
     <MESSAGE value="правки названий" />
     <MESSAGE value="Добавление магических методов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление магических методов" />
+    <MESSAGE value="доработка функций" />
+    <option name="LAST_COMMIT_MESSAGE" value="доработка функций" />
   </component>
 </project>
