@@ -1,6 +1,6 @@
 import pytest
 
-from tests.confitest import category3, grass1, grass2
+from tests.confitest import grass1, grass2
 
 
 def test_lawn_grass1(grass1):

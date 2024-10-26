@@ -73,7 +73,7 @@ def grass2():
 
 
 @pytest.fixture
-def category3(grass1, grass2):
+def category_grass(grass1, grass2):
     return Category("Газонная трава", "Различные виды газонной травы", [grass1, grass2])
 
 
@@ -113,7 +113,7 @@ def smartphone3():
 
 
 @pytest.fixture
-def category4(smartphone1, smartphone2, smartphone3):
+def category_smartphones(smartphone1, smartphone2, smartphone3):
     return Category(
         "Смартфоны",
         "Высокотехнологичные смартфоны",
