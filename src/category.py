@@ -3,12 +3,12 @@ from src.product import Product
 
 class Category:
     """Класс предоставляющий информацию о категории товара и его общих характеристиках"""
+
     name = str
     description = str
     products = list
     category_count = 0
     product_count = 0
-
 
     def __init__(self, name, description, products=list):
         """Инициализация объекта"""
@@ -18,14 +18,12 @@ class Category:
         Category.product_count += len(self.__products)
         Category.category_count += 1
 
-
     def __str__(self):
         """Отображение строки в заданном формате"""
         quantity = 0
         for i in self.__products:
             quantity += i.quantity
         return f"{self.name}, количество продуктов: {quantity} шт."
-
 
     def add_product(self, product):
         """Функция добавления нового продукта в список"""
@@ -35,11 +33,9 @@ class Category:
         else:
             raise TypeError
 
-
     @property
     def products_list(self):
         return self.__products
-
 
     @property
     def products_str_view(self):
