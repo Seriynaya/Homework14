@@ -1,39 +1,52 @@
 from src.product import Product
+
+
 class Category:
+    """Класс предоставляющий информацию о категории товара и его общих характеристиках"""
     name = str
     description = str
     products = list
     category_count = 0
     product_count = 0
 
+
     def __init__(self, name, description, products=list):
+        """Инициализация объекта"""
         self.name = name
         self.description = description
         self.__products = products if products else []
         Category.product_count += len(self.__products)
         Category.category_count += 1
 
+
     def __str__(self):
+        """Отображение строки в заданном формате"""
         quantity = 0
         for i in self.__products:
             quantity += i.quantity
-        return f'{self.name}, количество продуктов: {quantity} шт.'
+        return f"{self.name}, количество продуктов: {quantity} шт."
 
-    def add_product(self, product: Product):
-        self.__products.append(product)
-        Category.product_count += 1
+
+    def add_product(self, product):
+        """Функция добавления нового продукта в список"""
+        if isinstance(product, Product):
+            self.__products.append(product)
+            Category.product_count += 1
+        else:
+            raise TypeError
+
 
     @property
     def products_list(self):
         return self.__products
 
+
     @property
-    def products(self):
+    def products_str_view(self):
+        """Отображение продукта в заданном формате"""
         str_product = ""
         for product in self.__products:
-            str_product += (
-                f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
-            )
+            str_product += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
         return str_product
 
 

@@ -10,6 +10,23 @@
 * название (name)
 * описание (description)
 * список товаров категории (products)
+3. Создать класс Smartphone с параметрами:
+* название (name)
+* описание (description)
+* цена (price)
+* кол-во в наличии товаров (quantity)
+* производительность (efficiency)
+* модель (model)
+* память (memory)
+* цвет (color)
+4. Создать класс LawnGrass с параметрами:
+* название (name)
+* описание (description)
+* цена (price)
+* кол-во в наличии товаров (quantity)
+* страна (country)
+* период прорастания семян (germination period)
+* цвет (color)
 
 
 ## Структура проекта:
