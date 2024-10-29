@@ -1,10 +1,14 @@
-class Product:
+from src.base_product import BaseProduct
+from src.print_mixin import PrintMixin
+
+
+class Product(BaseProduct, PrintMixin):
     """Класс предоставляющий информацию о конкретном продукте"""
+
     name: str
     description: str
     price: int
     quantity: int
-
 
     def __init__(self, name, description, price, quantity):
         """Инициализация объекта"""
@@ -12,12 +16,11 @@ class Product:
         self.description = description
         self.__price = price
         self.quantity = quantity
-
+        super().__init__()
 
     def __str__(self):
         """Отображение строки в заданном формате"""
         return f"{self.name}, {self.__price} руб. Остаток: {self.quantity} шт."
-
 
     def __add__(self, other):
         """Метод сложения двух продуктов"""
@@ -25,7 +28,6 @@ class Product:
             return self.__price * self.quantity + other.__price * other.quantity
         else:
             raise TypeError
-
 
     @classmethod
     def new_product(cls, product_info: dict):
@@ -36,11 +38,9 @@ class Product:
         quantity = product_info.get("quantity")
         return cls(name, description, price, quantity)
 
-
     @property
     def price(self):
         return self.__price
-
 
     @price.setter
     def price(self, price_cost: int):
