@@ -94,3 +94,14 @@ def test_category_smartphones(
             f"{smartphone3.name}, {smartphone3.price} руб. Остаток: {smartphone3.quantity} шт.\n"
         )
     ]
+
+
+def test_middle_price(category1, product4):
+
+    category1 = Category(
+        "Телевизоры",
+        "Современный телевизор, который позволяет наслаждаться просмотром, станет вашим другом и помощником",
+        [product4],
+    )
+    result = category1.avg_price()
+    assert result == 17571.43
