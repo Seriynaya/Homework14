@@ -16,4 +16,4 @@ class LawnGrass(Product):
         if type(self) == type(other):
             return (self.price * self.quantity) + (other.price * other.quantity)
         else:
-            raise TypeError
+            raise TypeError("Ошибка сложения разных типов классов")

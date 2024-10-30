@@ -1,6 +1,6 @@
 import pytest
 
-from tests.confitest import grass1, grass2
+from tests.confitest import grass1, grass2, smartphone2
 
 
 def test_lawn_grass1(grass1):
@@ -23,7 +23,12 @@ def test_lawn_grass2(grass2):
     assert grass2.color == "Темно-зеленый"
 
 
-def add_product_grass(grass1, grass2):
+def test_add_product_grass(grass1, grass2):
     assert grass1 + grass2 == 16750
     with pytest.raises(TypeError):
         grass1 + 1
+
+
+def test_smartphone_add_grass(smartphone2, grass2):
+    with pytest.raises(TypeError):
+        smartphone2 + grass2

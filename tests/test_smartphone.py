@@ -1,6 +1,6 @@
 import pytest
 
-from tests.confitest import smartphone1, smartphone2, smartphone3
+from tests.confitest import smartphone1, smartphone2, smartphone3, grass1
 
 
 def test_smartphone1(smartphone1):
@@ -36,7 +36,18 @@ def test_smartphone3(smartphone3):
     assert smartphone3.color == "Синий"
 
 
-def add_product_smartphone(smartphone1, smartphone2):
+def test_add_product_smartphone1(smartphone2, smartphone3):
+    assert smartphone2 + smartphone3 == 2114000.0
+    with pytest.raises(TypeError):
+        smartphone2 + 1
+
+
+def test_add_product_smartphone2(smartphone1, smartphone2):
     assert smartphone1 + smartphone2 == 2580000
     with pytest.raises(TypeError):
         smartphone1 + 1
+
+
+def test_smartphone_add_grass(smartphone1, grass1):
+    with pytest.raises(TypeError):
+        smartphone1 + grass1
