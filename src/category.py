@@ -10,13 +10,23 @@ class Category:
     category_count = 0
     product_count = 0
 
-    def __init__(self, name, description, products=list):
+    def __init__(self, name, description, products):
         """Инициализация объекта"""
         self.name = name
         self.description = description
         self.__products = products if products else []
         Category.product_count += len(self.__products)
         Category.category_count += 1
+
+    def avg_price(self):
+        try:
+            prices = sum([value.price for value in self.__products])
+            quantities = sum([value.quantity for value in self.__products])
+            avg = prices / quantities
+            return round(avg, 2)
+
+        except ZeroDivisionError:
+            return 0
 
     def __str__(self):
         """Отображение строки в заданном формате"""

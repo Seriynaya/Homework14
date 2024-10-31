@@ -29,6 +29,21 @@ new_product = Product.new_product(
 )
 
 
+def test_category(category1, category2):
+    assert category2.name == "Смартфоны"
+    assert (
+        category2.description
+        == "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни"
+    )
+    assert len([category2.products]) == 1
+
+    assert category2.category_count == 2
+    assert category1.category_count == 2
+
+    assert category2.product_count == 4
+    assert category1.product_count == 4
+
+
 def test_category1(category1, product4):
     assert category1.name == "Телевизоры"
     assert (
@@ -62,11 +77,17 @@ def test_category2(category2, product1, product2, product3):
 def test_add_product(category2, product4):
     category2.add_product(product4)
     category2.add_product(new_product)
-    assert Category.product_count == 9
+    assert Category.product_count == 13
 
 
-def test_category_str(category2):
+def test_add_error(category1):
+    with pytest.raises(TypeError):
+        category1.add_product(1)
+
+
+def test_category_str(category1, category2):
     assert str(category2) == "Смартфоны, количество продуктов: 27 шт."
+    assert str(category1) == "Телевизоры, количество продуктов: 7 шт."
 
 
 def test_category_grass(category_grass, grass1, grass2):
@@ -94,3 +115,43 @@ def test_category_smartphones(
             f"{smartphone3.name}, {smartphone3.price} руб. Остаток: {smartphone3.quantity} шт.\n"
         )
     ]
+
+
+def test_avg_price1(category1, product4):
+
+    category1 = Category(
+        "Телевизоры",
+        "Современный телевизор, который позволяет наслаждаться просмотром, станет вашим другом и помощником",
+        [product4],
+    )
+    result = category1.avg_price()
+    assert result == 17571.43
+
+
+def test_avg_price2(category2, product1):
+
+    category2 = Category(
+        "Смартфоны",
+        "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
+        [product1],
+    )
+    result = category2.avg_price()
+    assert result == 36000.0
+
+
+def test_avg_price_none_list(category1, product4):
+    category1 = Category(name="none", description="none", products=[])
+    result = category1.avg_price()
+    assert result == 0
+
+
+def test_category_property(category1, category2):
+    with pytest.raises(AttributeError):
+        print(category1.__products)
+    assert category1.products_str_view == "55 QLED 4K, 123000.0 руб. Остаток: 7 шт.\n"
+    assert (
+        category2.products_str_view
+        == "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт.\n"
+        "Iphone 15, 210000.0 руб. Остаток: 8 шт.\n"
+        "Xiaomi Redmi Note 11, 31000.0 руб. Остаток: 14 шт.\n"
+    )
